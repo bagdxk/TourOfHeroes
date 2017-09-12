@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
 
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroService } from '../../services/hero.service';
@@ -13,7 +15,8 @@ describe('HeroDetailComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         FormsModule,
-        RouterTestingModule
+        RouterTestingModule,
+        HttpModule
       ],
       declarations: [ HeroDetailComponent ],
       providers: [HeroService]

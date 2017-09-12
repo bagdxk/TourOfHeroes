@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeroDetailComponent } from "../hero-detail/hero-detail.component";
 import { DashboardComponent } from "../dashboard/dashboard.component";
 import { HeroesComponent } from "../heroes/heroes.component";
-
+import { HeroSearchComponent } from '../hero-search/hero-search.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -19,7 +19,8 @@ describe('AppComponent', () => {
         AppComponent,
         HeroDetailComponent,
         DashboardComponent,
-        HeroesComponent
+        HeroesComponent,
+        HeroSearchComponent
       ]
     }).compileComponents();
   }));
